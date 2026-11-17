@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<Head>
+<title>Name 1</title>
+<style>
+    .container {
+      display: flex;
+      gap: 20px; /* Adds space between the two sections */
+    }
+
+    .box{
+      flex: 1; /* Makes both sections equal width */
+      padding: 40px;
+      background-color: #f4f4f4;
+      border: 1px solid #ccc;
+    }
+
+    /* Stacks the sections vertically on mobile screens */
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .video-header {
+      position: relative;
+      width: 100%;
+      height: 80vh; /* Adjust height as needed */
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .video-header video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures the video fills the header without stretching */
+      z-index: -1; /* Places video behind the text */
+    }
+
+    /* Optional dark overlay to make white text easier to read */
+    .video-header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+    .header-content {
+      z-index: 1;
+      padding: 20px;
+    }
+	.btn {
+	  Padding: 10px;
+	  background-color: gray;
+	  position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 1000;
+	}
+	/* Paragraph */
+	.p1 {
+	  Padding: 10px;
+	}
+	
+	/* FOOTER */
+	.site-footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-logo {
+  max-width: 150px;
+  margin-bottom: 15px;
+}
+
+.footer-col h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #f3f3f3;
+}
+
+.footer-contact p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+  color: #cccccc;
+}
+
+.footer-contact i, .footer-social i {
+  margin-right: 8px;
+  color: #00bcd4;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #333333;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #00bcd4;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #444444;
+  font-size: 0.85srem;
+  color: #888888;
+}
+  </style>
+</head>
+
+<body>
+<section>
+ <header class="video-header">
+    <!-- Autoplay requires 'muted' and 'playsinline' to work across modern browsers -->
+    <a href="index.html"><button class=btn>Main Menu</button></a>
+	<video autoplay muted loop playsinline poster="fallback-image.jpg">
+      <source src="video 1.mp4" type="video/mp4">
+    </video>
+
+<center>
+<img src="daryl.jfif" alt="Photo of Mr. Mark Daryl G. Garcia" height="200px">
+<h1>MARK DARYL G. GARCIA</h1>
+<p><B>Professional Profile</b><br>
+An educator, ICT practitioner, and Computer Systems Servicing (CSS) trainer<br>passionate about technology integration, curriculum development, and learner-centered education.</p>
+</header>
+</center>
+
+<div class="container">
+<section class="box">
+  <h2>Professional Background</h2>
+  <p>work as a Computer Systems Servicing NC II Trainer at Saguday National High School and a volunteer teacher at Bintawan National High School.</p>
+  <p>Professional Interests Include</p> 
+  <ul>
+  <li>Technical-Vocational Education and Training (TVET).</li>
+  <li>Computer Systems Servicing (CSS) NC II.</li>
+  <li>Information and Communications Technology (ICT).</li>
+  <li>Senior High School and Junior High School curriculum development.</li>
+  <li>Instructional materials and assessment development.</li>
+  <li>Educational technology and digital literacy.</li>
+  </ul>
+</section>
+<section class="box">
+  <h2>Personal and Professional Strengths</h2>
+  <p>My qualities that stands out:</p> 
+  <ul>
+  <li><b>Creative:</b> You enjoy developing visual and engaging<br>educational materials.</li>
+  <li><b>Resourceful:</b> You find practical ways to create teaching<br>resources and school documents.</li>
+  <li><b>Learner-centered:</b> You emphasize student participation <br>and hands-on learning.</li>
+  <li><b>Collaborative:</b> You participate in school activities and initiatives.</li>
+  <li><b>Technology-oriented:</b> You continuously explore digital <br>tools and technical applications.</li>
+  <li><b>Growth-minded:</b> You show interest in improving your teaching <br>strategies and professional capabilities.</li>
+  </ul>
+</section>
+</div>
+
+<center>
+<p class="p1">I am an educator and Computer Systems Servicing NC II Trainer with a strong passion for technology, innovation, and quality education. I am committed to developing learners' technical competencies, digital literacy, problem-solving abilities, and practical skills through meaningful and engaging learning experiences.
+
+I actively engage in curriculum development, instructional material preparation, assessment design, and school-based initiatives that support learner achievement and institutional development. I believe that education goes beyond teaching concepts; it is about empowering learners with the knowledge, skills, values, and confidence they need to succeed in an increasingly technology-driven world.
+
+My goal is to continuously grow as an educator, embrace innovation, and contribute meaningfully to the development of my learners, colleagues, and school community.</p>
+</center>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    
+    <!-- Left Column: Logo & Contact Info -->
+    <div class="footer-col footer-contact">
+      <img src="BNHS.png" alt="Company Logo" class="footer-logo">
+      <h3>Contact Us</h3>
+      <p><i class="fa fa-envelope" aria-hidden="true"></i> Email: markdaryl.garcia@deped.gov.ph</p>
+      <p><i class="fa fa-phone" aria-hidden="true"></i> Phone: +639 995-992-3458</p>
+      <p><i class="fa fa-map-marker" aria-hidden="true"></i> Bintawan Sur, Villaverde, Nueva Vizcaya</p>
+    </div>
+
+    <!-- Right Column: Social Media Links -->
+    <div class="footer-col footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/garciamarkdaryl/" target="_blank" rel="noopener noreferrer" >
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.instagram.com/garciamarkdaryl/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; Mark Daryl G. Garcia All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
